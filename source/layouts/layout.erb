@@ -25,7 +25,7 @@
             <span class="icon-bar"></span>
           </button>
           <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
+            <%= image_tag 'logo.png' %>
           <% end %>
         </div>
 
@@ -57,5 +57,33 @@
     </nav>
 
     <%= yield %>
+
+    <div class="bg-black">
+  <ul class="list-inline list-size vertical-margin">
+    <li class="icone-padding">
+      <%link_to "#" do %>
+      <i class="fa fa-facebook"></i>
+      <%end%>
+    </li>
+    <li class="icone-padding">
+      <%link_to "#" do %>
+      <i class="fa fa-twitter"></i>
+      <%end%>
+    </li>
+    <li class="icone-padding">
+      <%link_to "#" do %>
+      <i class="fa fa-instagram"></i>
+      <%end%>
+    </li>
+    <li class="icone-padding">
+      <%link_to "#" do %>
+      <i class="fa fa-youtube"></i>
+      <%end%>
+    </li>
+  </ul>
+  <p class="text-size text-right">
+    Stylus is a fictive product by <%= link_to "LeWagon", "http://lewagon.org" %>
+  </p>
+</div>
   </body>
 </html>

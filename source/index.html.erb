@@ -1,146 +1,83 @@
+---
+title: Le Wagon Middleman boilerplate
+---
 
-
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:image" content="http://www.lewagon.org/assets/logo-f800df98aa2605c552400667353f47d2.png" />
-
-  <title>Stylus</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="stylesheets/style.css">
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-</head>
-
-<body>
-  <div id="bg-image" class="vertical-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
+<div id="bg-image" class="vertical-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
           <h1 class="vertical-padding">
             Styl.us
           </h1>
           <p>
-            Turn your pen into  <strong> your best friend</strong>
+            Turn your pen into <strong> your best friend</strong>
           </p>
           <p>
-            Make every line  <strong>you write count</strong>
+            Make every line <strong>you write count</strong>
           </p>
           <div class="vertical-padding">
-            <%= link_to "GET YOUR STYLUS", "#", class: "btn-lg btn-primary"%>
+          <%= link_to "GET YOUR STYLUS", "#", class: "btn-lg btn-primary"%>
           </div>
-        </div>
       </div>
     </div>
   </div>
+</div>
 
-
-
-
-
-  <div class="bg-blue text-center vertical-padding">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <div class="padding-icone">
-            <%= image_tag "paper.svg", alt:"paper" %>
+<div class="bg-blue text-center vertical-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="padding-icone">
+          <%= image_tag "paper.svg", alt:"paper" %>
           <h2>
             Natural writing
           </h2>
           <p>
-            Don't change your habits, write with a pen <strong>on paper notebooks</strong>
+          Don't change your habits, write with a pen <strong>on paper notebooks</strong>
           </p>
-          </div>
         </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <div class="padding-icone">
-            <%= image_tag "computer.svg", alt:"computer" %>
-
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="padding-icone">
+          <%= image_tag "computer.svg", alt:"computer" %>
           <h2>
             Sync. copy
           </h2>
           <p>
             Stylus instantaneously copy your text on your computer, <strong>in real-time</strong>
           </p>
-          </div>
         </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <div class="padding-icone">
-            <%= image_tag "analytics.svg", alt:"analytics" %>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="padding-icone">
+          <%= image_tag "analytics.svg", alt:"analytics" %>
           <h2>
             Analytics
           </h2>
           <p>
             Get feedbacks on the way you write, <strong>your favorite words, your frequent mistakes</strong>
           </p>
-          </div>
         </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-          <div class="padding-icone">
-          <%= image_tag "data.svg", alt:"data" %>
-          <h2>
-            Storing your texts
-          </h2>
-          <p>
-            Everything line writen your stylus is stored in the cloud, so that <strong>it's never lost</strong>
-          </p>
-          </div>
-        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="padding-icone">
+          <%= image_tag "data.svg", alt:"data" %><h2>
+          Storing your texts
+        </h2>
+        <p>
+          Everything line writen your stylus is stored in the cloud, so that <strong>it's never lost</strong>
+        </p>
       </div>
     </div>
   </div>
+</div>
+</div>
+<div class="text-center text-black vertical-padding">
+  <h2>Get news from Stylus</h2>
+  <p>Leave us your mail and get stylus news</p>
+  <form class="form-inline vertical-padding">
+    <input class="form-control" type="email" placeholder="nathanbg@gmail.com"> </input>
+    <input class="btn btn-danger" type="submit" value="Subscribe"></input>
+  </form>
+</div>
 
-  <div class="text-center text-black vertical-padding">
-    <h2>Get news from Stylus</h2>
-    <p>Leave us your mail and get stylus news</p>
-    <form class="form-inline vertical-padding">
-      <input class="form-control" type="email" placeholder="nathanbg@gmail.com"> </input>
-      <input class="btn btn-danger" type="submit" value="Subscribe"></input>
-    </form>
-  </div>
-
-  <div class="bg-black">
-
-    <ul class="list-inline list-size vertical-margin">
-      <li class="icone-padding">
-        <%link_to "#" do %>
-           <i class="fa fa-facebook"></i>
-        <%end%>
-      </li>
-      <li class="icone-padding">
-        <%link_to "#" do %>
-           <i class="fa fa-twitter"></i>
-        <%end%>
-      </li>
-      <li class="icone-padding">
-        <%link_to "#" do %>
-           <i class="fa fa-instagram"></i>
-        <%end%>
-      </li>
-      <li class="icone-padding">
-        <%link_to "#" do %>
-           <i class="fa fa-youtube"></i>
-        <%end%>
-      </li>
-    </ul>
-
-    <p class="text-size text-right">
-      Stylus is a fictive product by <%= link_to "LeWagon", "http://lewagon.org" %>
-    </p>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</body>
-</html>
